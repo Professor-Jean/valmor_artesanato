@@ -1,0 +1,583 @@
+﻿/*******************************************************************************
+
+  Autor: Arthur Paiva Camilo, Henrique Werner Junkes, Matheus Leitzke e Thiago Nicolodi.
+  Data de Criação: 01/09/2016.
+  Data de Modificação: 01/09/2016.
+
+*******************************************************************************/
+/*
+  Tabela de cores principais:
+
+#02080d
+#5a6774
+#d8e9f1
+#9f7c4d
+#f7e6d4
+
+Fonte da logo: Script MT Std Bold;
+Fonte subtítulo: Berlin;
+
+*/
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffcfc;
+}
+
+/*Estilo página de autenticação*/
+
+.login_msg{
+  color: red;
+  width: 200px;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+}
+
+.login{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px auto;
+  height: auto;
+  margin-top: 24px;
+  margin-bottom: 4.5%;
+  width: 300px;
+  padding: 15px;
+  width: 300px;
+}
+
+.login table{
+  padding:50px 30px 50px 10px;
+  border: 2px solid #707070;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 25%;
+  height: 35%;
+
+}
+
+.login table tr td{
+  padding: 18px;
+}
+
+.login input{
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+.login button{
+  padding: 15px 125px 15px 125px;
+  text-align: center;
+  background-color: #245269;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.login button:hover{
+  background-color: #1a3b4c;
+}
+
+/* Codificação Menu */
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #245269;
+  z-index: 20;
+  height: 79px;
+  border-bottom: 2px solid #000;
+}
+
+header img{
+  float: left;
+  width: 12%;
+  margin: 15px 10% 10px 10px;
+  height: 45px;
+}
+
+/*Dropdown Menu*/
+
+ ul{
+  overflow: hidden;
+ }
+
+ li {
+  float: left;
+ }
+
+li a, .dropbtn {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 27px;
+  text-decoration: none;
+  min-width: 100px;
+  transition:0.7s;
+  font-size: 25px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #2e6885;
+  color: #fff;
+  min-width: 100px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2e6885;
+  min-width: 149px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.7s;
+}
+
+ .dropdown-content a:hover {
+   background-color: #3b85ab;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+/*Fim Dropdown Menu*/
+
+.botao_notificacao{
+  width: 40px;
+  height: 40px;
+  margin:0;
+  padding: 0;
+  position:absolute;
+  top: 20px;
+  right: 110px;
+}
+
+.logout{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+/*Codificação Rodapé*/
+
+footer{
+  width: 100%;
+  position: relative;
+  clear: both;
+  height: 63px;
+  top: 21px;
+  background-color: #245269;
+  color: white;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  border-top: 1px solid #000;
+  padding-top: 21px;
+}
+
+/*Codificação conteúdo*/
+
+.conteudo{
+  position: relative;
+  top: 21px;
+  min-height: 525px;
+  background-color: #fffcfc;
+  clear: both;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid #000;
+  padding-bottom: 60px;
+}
+
+.conteudo table{
+  margin: 0px auto;
+  border: 2px solid #707070;
+  min-width: 500px;
+  font-size: 18px;
+  border-radius: ;
+}
+
+.conteudo table td{
+  padding: 10px;
+}
+
+.conteudo table td input{
+  border-radius: 3px;
+  border: solid 1px #ccc;
+}
+.conteudo table td textarea{
+  border-radius: 3px;
+}
+.conteudo table td select{
+  border-radius: 3px;
+}
+
+.conteudo h1{
+  text-align: center;
+  margin: 60px 0 20px 0;
+  font-size: 28px;
+  padding-top: 60px;
+}
+
+.conteudo button{
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.botoes{
+ text-align: center;
+ margin: 0px auto;
+ width: 500px;
+}
+
+.botao_registrar{
+  padding: 10px 91.5px 10px 91.5px;
+  text-align: center;
+  background-color: #5a6774;
+  border: none;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.botao_registrar:hover{
+  background-color: #374048;
+}
+
+.botao_alterar{
+  padding: 10px 101.5px 10px 101.5px;
+  text-align: center;
+  background-color: #5a6774;
+  border: none;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.botao_alterar:hover{
+  background-color: #374048;
+}
+
+.botao_limpar{
+  padding: 10px 91.5px 10px 91.5px;
+  text-align: center;
+  background-color: #8c8c8c;
+  border: none;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+.botao_limpar:hover{
+  background-color: #737373;
+}
+
+.botao_retornar{
+  padding: 10px 165px 10px 165px;
+  text-align: center;
+  background-color: #5a6774;
+  border: none;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.botao_retornar:hover{
+  background-color: #374048;
+}
+.icone_tabela{
+  width: 20px;
+}
+
+.conteudo table td button{
+  width: 100%;
+  padding: 0;
+  margin: 0px;
+  border-bottom: none;
+}
+
+.registro{
+  max-width: 80%;
+}
+
+.registros table{
+  margin-top: 10px;
+}
+
+.registros table td{
+  border: 2px solid #707070 	;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.registros table th{
+  background-color: #d8e9f1;
+  border: 2px solid #707070 	;
+  border-radius: 5px;
+  color: #000;
+  padding: 7px;
+}
+
+.registros img{
+  height: 25px;
+  width: 25px;
+}
+
+
+.imagem_csr img{
+  height: 100px;
+  width: 125px;
+}
+
+/*Páginas de consulta_toggles*/
+
+.consulta_toggle table {
+  text-align: center;
+  margin-top: 20px;
+  min-width: 60%;
+}
+
+.consulta_toggle table th{
+  padding: 10px;
+  border: 2px solid #707070 	;
+  background-color: #d8e9f1;
+}
+
+.consulta_toggle table td{
+  padding: 10px;
+}
+
+.tabela_toggle{
+  text-align: center;
+}
+
+.consulta_toggle .titulos {
+  border-top: 1px solid #000;
+  font-weight: bold;
+}
+
+.form_pesquisa{
+  margin: 0px auto;
+  width: 500px;
+}
+
+.form_pesquisa select{
+  border: 1px solid #5a6774;
+  border-radius: 3px;
+}
+
+.form_pesquisa input{
+  border: 1px solid #5a6774;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+  left: 412px;
+  text-align: center;
+  height: 25px;
+  font-size: 15px;
+}
+.form_pesquisa button{
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  padding-top: 3px;
+  position: relative;
+  left: 630px;
+  background-color: #5a6774;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+.form_pesquisa button img{
+  width: 20px;
+}
+
+.form_pesquisa2 select{
+  border: 1px solid #5a6774;
+  position: relative;
+  left: 185px;
+  top: 29px;
+  height: 29px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.form_pesquisa2 input{
+  border: 1px solid #5a6774;
+  border-radius: 3px 0 0 3px ;
+  position: relative;
+  left: 321px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 25px;
+  font-size: 15px;
+}
+
+.form_pesquisa2{
+  margin: 0px auto;
+  width: 0px;
+}
+
+.form_pesquisa2 button{
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  padding-top: 3px;
+  position: relative;
+  left: 515px;
+  margin-top: -39px;
+  background-color: #5a6774;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+.form_pesquisa2 button img{
+  width: 20px;
+}
+
+.form_pesquisa input:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+
+.form_pesquisa2 input:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+
+.form_pdf{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.form_pdf button{
+  width: 150px;
+  margin-left: 78.9%;
+  padding: 5px;
+  text-align: center;
+  background-color: #5a6774;
+  border: none;
+  border-radius: 3px;
+}
+
+.form_pdf button:hover{
+  background-color: #374048;
+}
+
+h6{
+  text-align: right;
+
+}
+
+.aviso{
+  margin: 0px auto;
+  width: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.aviso p{
+  padding:50px 30px 50px 10px;
+  border: 2px solid #707070;
+  margin-top: 60px;
+}
+
+.aviso p img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.icone_toggle, li a img {
+  background: #fffcfc;
+  padding: 0px;
+  min-width: 0px;
+}
+.icone_toggle:hover{
+  background: #fffcfc;
+  padding: 0px;
+  min-width: 0px;
+}
+.dados_consulta_maquinas {
+  min-width: 353px;
+}
+.dados_consulta td {
+  min-width: 360px;
+}
+
+.dados_consulta_clientes {
+  width: 350px;
+  border: none;
+}
+
+.tabela_toggle table, tr{
+  border: none;
+}
+.tirarestilo{
+  color: #000 !important;
+  padding: 0px !important;
+  margin: 0px;
+  font-size: 19px;
+}
+
+.tirarestilo:hover{
+  background-color: none;
+}
+
+
+.form_pesquisa3 input{
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  position: relative;
+  left: 388px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form_pesquisa3{
+  margin: 0px auto;
+  width: 310px;
+}
+
+.form_pesquisa3 input:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+
+.botao_mais {
+  width: 21px !important;
+  height: 21px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #fffcfc !important;
+  text-align: center !important;
+  border: none !important;
+  color: #000 !important;
+  position: relative !important;
+  left: 745px !important;
+}
